@@ -88,7 +88,7 @@ with a SIGTERM(or CTRL-C).
 
 You can run the fan at a certain power percentage (of the supplied 5V and its 
 required current) by specifiying the -p option. This causes PWM to control the 
-fan so that it only runs (is powered) for X% of the time. 
+fan so that it only runs (if powered) for X% of the time. 
 
 e.g. to run the fan at 50%: 
 
