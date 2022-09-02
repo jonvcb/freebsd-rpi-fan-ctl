@@ -103,7 +103,7 @@ with a SIGTERM (or CTRL-C).
 
 This mode can also be used to just turn the fan OFF or ON in which case
 it doesn't run in a loop. To do so just pass the percentages 0 for always OFF
-or 100 
+or 100 for always ON.
 
 #### Running the fan in order to keep the CPU at a certain temperature: 
 
