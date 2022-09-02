@@ -12,8 +12,8 @@ raspbery pi model 4. It should run on other models as well providing they
 have the GPIO interfaces. Made / tested on FreeBSD 13.1 but will likely 
 compile on previous versions.  
 
-It allows controlling a PWM fan in one of two modes; by setting a percentage
-of power, or by setting a desired temperature. 
+It allows controlling a fan with PWM in one of two modes; by setting a 
+percentage of power, or by setting a desired temperature. 
 
 Feel free to use and adapt to your own needs.
 

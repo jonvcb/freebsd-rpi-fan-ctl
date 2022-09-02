@@ -230,6 +230,7 @@ void run_fan_at(percentage, maxtemp) {
 	  if(!get_pin_value(gpiopin)) {
             set_pin_value(gpiopin, 1);
 	  }
+	  useccounter = 1000000;
 	} else {
           useconds_t d1 = perc * (10000 / pwmfreq);
           useconds_t d2 = (100 - perc ) * (10000 / pwmfreq);
