@@ -247,7 +247,7 @@ void run_fan_at(percentage, maxtemp) {
 	  }
 	  set_pin_value(gpiopin,0);
 	  sleepmode = 1;
-	} else if (t >= ttemp && sleepmode) {
+	} else if (t >= ttemp - 1 && sleepmode) {
 	  if (verbose) {
 	    printf("Temperature at %.3f is near target of %.3f, waking up from sleep mode.\n",t,ttemp);
           }
