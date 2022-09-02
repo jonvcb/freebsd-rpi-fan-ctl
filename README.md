@@ -1,2 +1,3 @@
 # rpi-fan-ctl
-Raspberry Pi PWM Fan Control Program
+##Raspberry Pi PWM Fan Control Program
+
