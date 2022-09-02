@@ -376,6 +376,9 @@ int main(int argc,char *argv[]) {
     }
     verbose = 0;
     if(fork()) exit(0);
+    close(0);
+    close(1);
+    close(2);
   }
 
   signal(SIGTERM,sig_term_handler);
