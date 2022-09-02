@@ -21,11 +21,11 @@ Feel free to use and adapt to your own needs.
 
 Just type:
 
-# make
+$ make
 
 Or use:
 
-# cc rpi-fan-ctl.c -lgpio -o rpi-fan-ctl
+$ cc rpi-fan-ctl.c -lgpio -o rpi-fan-ctl
 
 ### How to use: 
 
