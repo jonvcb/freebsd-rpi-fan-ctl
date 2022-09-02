@@ -93,7 +93,7 @@ void usage(char *s) {
   fprintf(stderr, "  Settig the frequency to 10 causes power to be on for 0.04 and off for 0.06,\n");
   fprintf(stderr, "  10 full cycles per second.\n\n");
   fprintf(stderr, "  %s [-g pwm-gpio-pin] [-v] [-d] [-f 1-50] -p <percentage>\n\n",s);
-  fprintf(stderr, "  %s [-g pwm-gpio-pin] [-v] [-d] -w [-f 1-50] <target-temp>\n\n",s);
+  fprintf(stderr, "  %s [-g pwm-gpio-pin] [-v] [-d] [-f 1-50] -w <target-temp>\n\n",s);
 
   exit(1);
 }
