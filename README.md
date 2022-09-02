@@ -39,10 +39,10 @@ enough power to run a fan on these ports and this will likely damage it.
 
 #### GPIO pin
 
-By default this tool is configured to use the PIO pin 14 (connector pin 8)
+By default this tool is configured to use the GPIO pin 14 (connector pin 8)
 next to ground (connector pin 6) and to +5V (connector pin 4).
 
-If you want to use a different GPI port you can, just specify it with the 
+If you want to use a different GPIO pin you can, just specify it with the 
 -g option and a pin number from 0 to 53. 
 
 This tool is pre-configured to connect to GPI controller 0 i.e. /dev/gpioc0
