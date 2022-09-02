@@ -87,7 +87,7 @@ void usage(char *s) {
 
   fprintf(stderr, "  For PWM modes (-p and -w) the default PWM frequency is 25 which corresponds\n");
   fprintf(stderr, "  to the number of times per second that the power is toggled and cycled\n");
-  fprintf(stderr, "  through ON and OFF. This frequency can be set to any number between 0 and 50.\n");
+  fprintf(stderr, "  through ON and OFF. This frequency can be set to any number between 1 and 50.\n");
   fprintf(stderr, "  For example, a frequency of 1 and percentage of 40, causes power to be on\n");
   fprintf(stderr, "  for 0.4 seconds and off for 0.6 seconds continuously.\n");
   fprintf(stderr, "  Settig the frequency to 10 causes power to be on for 0.04 and off for 0.06,\n");
