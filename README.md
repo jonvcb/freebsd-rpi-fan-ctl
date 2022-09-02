@@ -82,7 +82,7 @@ the temperature drops below the threshold minus 5 degrees, i.e. 55 in the above
 example.
 
 This mode enters a loop and the tool runs forever until it is interrupted 
-with a SIGINT (or CTRL-C). 
+with a SIGTERM(or CTRL-C). 
 
 #### Running the fan at a certain power percentage using PWM:
 
@@ -99,7 +99,7 @@ To run at 70% with verbosity:
 $ rpi-fan-ctl -v -p 70
 
 This mode enters a loop and the tool runs forever until it is interrupted 
-with a SIGINT (or CTRL-C). 
+with a SIGTERM (or CTRL-C). 
 
 This mode can also be used to just turn the fan OFF or ON in which case
 it doesn't run in a loop. To do so just pass the percentages 0 for always OFF
@@ -111,7 +111,7 @@ This is the most complex but nicest mode; it uses PWM to keep the CPU around a
 certain temperature at all times, providing it is possible. 
 
 This mode also enters a loop and the tool runs forever until it is interrupted 
-with a SIGINT (or CTRL-C). 
+with a SIGTERM (or CTRL-C). 
 
 By specifying a desired temperature with the -w option, in this mode the tool
 starts off by running the fan at 50% and then keeps adjusting the fan speed 
@@ -159,7 +159,7 @@ Runs at 10Hz attempting to achieve 60 degrees of CPU temperature.
 
 The last option is the background mode; when used it cases the tool to
 detach and to run forever in background. You can then terminate the process
-by sending it a KILL -SIGINT if wished. 
+by sending it a KILL -SIGTERM if wished. 
 
 It is only available for modes that run in loop (-t, -p and -w) and is 
 enabled with the -d switch as in the following example: 
