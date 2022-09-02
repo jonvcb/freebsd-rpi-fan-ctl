@@ -47,7 +47,7 @@ If you want to use a different GPI port you can, just specify it with the
 
 This tool is pre-configured to connect to GPI controller 0 i.e. /dev/gpioc0
 
-e.g. # rpi-fan-ctl -g 1 ....
+e.g. $ rpi-fan-ctl -g 1 ....
 
 #### Verbose mode
 
@@ -58,7 +58,7 @@ pin transitions.
 
 Use the -s option to display the current fan state; 1 means it's running and 0 means it's not running (or powered). 
 
-e.g. # rpi-fan-ctl -s 
+e.g. $ rpi-fan-ctl -s 
  
 1
 
@@ -66,7 +66,7 @@ e.g. # rpi-fan-ctl -s
 
 Use the -c option to display the temperature: 
 
-e.g. # rpi-fan-ctl -c
+e.g. $ rpi-fan-ctl -c
 
 55.955
 
@@ -74,11 +74,12 @@ e.g. # rpi-fan-ctl -c
 
 To keep the cpu temperature below a certain temperature, use the -t option. For example to keep the temp below 60 degrees celcius you can type: 
 
-# rpi-fan-ctl -p 60
+$ rpi-fan-ctl -t 60
 
 This mode doesn't use PWM. Instead, it simply turns the fan to full power 
-when the temperature goes above 60. It then turns the fan off when the
-temperature drops below the temperature minus 5 degrees, i.e. 55 in this case.
+when the temperature goes above the threshold. It then turns the fan off when 
+the temperature drops below the threshold minus 5 degrees, i.e. 55 in the above
+example.
 
 This mode enters a loop and the tool runs forever until it is interrupted 
 with a SIGINT (or CTRL-C). 
@@ -86,16 +87,16 @@ with a SIGINT (or CTRL-C).
 #### Running the fan at a certain power percentage using PWM:
 
 You can run the fan at a certain power percentage (of the supplied 5V and its 
-default current) by specifiying the -p option. This causes PWM to control the 
-fan so that it only runs for X% of the time. 
+required current) by specifiying the -p option. This causes PWM to control the 
+fan so that it only runs (is powered) for X% of the time. 
 
 e.g. to run the fan at 50%: 
 
-# rpi-fan-ctl -p 50
+$ rpi-fan-ctl -p 50
 
 To run at 70% with verbosity: 
 
-# rpi-fan-ctl -v -p 70
+$ rpi-fan-ctl -v -p 70
 
 This mode enters a loop and the tool runs forever until it is interrupted 
 with a SIGINT (or CTRL-C). 
@@ -129,7 +130,7 @@ and thus make more noise.
 
 To run CPU at 60 degrees and control on GPIO port 12 for example, use: 
 
-# rpi-fan-ctl -g 12 -w 60 
+$ rpi-fan-ctl -g 12 -w 60 
 
 #### PWM frequency:
 
@@ -150,7 +151,7 @@ only has effect in PWM modes, i.e. if used with conjunction with the -p or
 
 For example: 
 
-# rpi-fan-ctl -w 60 -f 10 
+$ rpi-fan-ctl -w 60 -f 10 
 
 Runs at 10Hz attempting to achieve 60 degrees of CPU temperature. 
 
@@ -163,5 +164,5 @@ by sending it a KILL -SIGINT if wished.
 It is only available for modes that run in loop (-t, -p and -w) and is 
 enabled with the -d switch as in the following example: 
 
-# rpi-fan-ctl -w 60 -d 
+$ rpi-fan-ctl -w 60 -d 
 
