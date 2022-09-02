@@ -72,7 +72,9 @@ void sig_int_handler(int s) {
 }
 
 void usage(char *s) {
+
   fprintf(stderr, "\nUsage: \n\n");
+
   fprintf(stderr, "  [-g pwm-gpio-pin] is used to specify the GPIO pin in any config:\n\n");
   fprintf(stderr, "  [-v] can be used to enable verbose mode and can be used multiple times.\n\n");
   fprintf(stderr, "  [-d] can be used to launch in daemon (background) mode and detach.\n\n");
