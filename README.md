@@ -166,3 +166,4 @@ enabled with the -d switch as in the following example:
 
 $ rpi-fan-ctl -w 60 -d 
 
+Enjoy the silence :)))
