@@ -1,7 +1,6 @@
 # rpi-fan-ctl
 ## Raspberry Pi PWM Fan Control Program
 
-<<<<<<< HEAD
 ### Version History: 
   
 2002.09.02 - Version 1.0 - Initial version
@@ -20,5 +19,3 @@ Just type "make"
 Or use #cc rpi-fan-ctl.c -lgpio -o rpi-fan-ctl
 
 
-=======
->>>>>>> 7e6e12eafc9c686365c92767e6a1e51a732b96a1
