@@ -54,7 +54,7 @@ e.g. $ rpi-fan-ctl -g 1 ....
 Use -v to enable verbosity (in foreground mode only). Use -v -v to also log
 pin transitions. 
 
-####: Reading the fan state:
+#### Reading the fan state:
 
 Use the -s option to display the current fan state; 1 means it's running and 0 means it's not running (or powered). 
 
