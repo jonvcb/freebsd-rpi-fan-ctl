@@ -60,16 +60,6 @@ void sig_term_handler(int s) {
   if (verbose) { printf("SIGTERM received, exiting ...\n"); }
   exit(0);
 }
-void sig_kill_handler(int s) {
-  if(handle>=0) { gpio_close(handle); }
-  if (verbose) { printf("SIGKILL received, exiting ...\n"); }
-  exit(0);
-}
-void sig_int_handler(int s) {
-  if(handle>=0) { gpio_close(handle); }
-  if (verbose) { printf("SIGINT received, exiting ...\n"); }
-  exit(0);
-}
 
 void usage(char *s) {
 
